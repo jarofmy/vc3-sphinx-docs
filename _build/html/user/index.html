@@ -1,0 +1,296 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started with VC3 &mdash; VC3 Documentations  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="VC3 Documentations  documentation" href="../index.html"/>
+        <link rel="next" title="Login or Create Account" href="login.html"/>
+        <link rel="prev" title="Glossary of Terms Used in VC3 Documentation" href="../glossary.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> VC3 Documentations
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms Used in VC3 Documentation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started with VC3</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#building-your-first-virtual-cluster">Building your first Virtual Cluster</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="login.html">Login or Create Account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="globus.html">2. Sign in to Globus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="institutialid.html">3a. Login with your institutional ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="globusid.html">3a. Login with your Globus ID</a></li>
+<li class="toctree-l3"><a class="reference internal" href="profile.html">4. Complete or update your VC3 profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="allocations.html">5. Connect an Allocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="projects.html">6. Defining a Project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="clustertemplates.html">7. Creating a Cluster Template</a></li>
+<li class="toctree-l3"><a class="reference internal" href="resources.html">8. Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="virtualclusters.html">8. Launching a Virtual Cluster</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VC3 Documentations</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Getting Started with VC3</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started-with-vc3">
+<h1>Getting Started with VC3<a class="headerlink" href="#getting-started-with-vc3" title="Permalink to this headline">¶</a></h1>
+<p>Last revised: Tuesday, November 26, 2017</p>
+<p>questions/comments: <a class="reference external" href="mailto:lincolnb&#37;&#52;&#48;uchicago&#46;edu">lincolnb<span>&#64;</span>uchicago<span>&#46;</span>edu</a></p>
+<p><a href="#id1"><span class="problematic" id="id2">|Virtual Clusters for Community Computation|</span></a>, or <a href="#id3"><span class="problematic" id="id4">|VC3|</span></a>, is a platform for connecting
+clusters, grids, and clouds. VC3 can run overlay systems for a variety of
+cluster frameworks to make disparate resources appear as a single “virtual”
+resource for collaborative science.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This portion of <a href="#id5"><span class="problematic" id="id6">|VC3|</span></a>’s documentation does not cover installation. See
+the <a class="reference internal" href="../index.html#installation-guide"><span class="std std-ref">Installation</span></a> section for how to install <a href="#id7"><span class="problematic" id="id8">|VC3|</span></a>.</p>
+</div>
+<dl class="docutils">
+<dt>Prerequisites</dt>
+<dd><p class="first">In order to use VC3, you’ll need an allocation or account with with a supported
+target resource. These include, but are not limited to:</p>
+<blockquote>
+<div><ul class="simple">
+<li>University of Chicago - Research Computing Center</li>
+<li>University of Notre Dame - Center for Research Computing</li>
+<li>Brookhaven National Laboratory - Scientific Data &amp; Computing Center</li>
+<li>Syracuse University - Research Computing</li>
+<li>Texas Advanced Computing Center</li>
+<li>NERSC</li>
+<li>Amazon Web Services</li>
+<li>Open Science Grid</li>
+<li><em>and more!</em></li>
+</ul>
+</div></blockquote>
+<p class="last">Institutions and resources are added frequently - be sure to subscribe to our newsletter and visit <a class="reference external" href="https://www.virtualclusters.org">https://www.virtualclusters.org</a>!</p>
+</dd>
+</dl>
+<div class="section" id="building-your-first-virtual-cluster">
+<h2>Building your first Virtual Cluster<a class="headerlink" href="#building-your-first-virtual-cluster" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="login.html">Login or Create Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="globus.html">2. Sign in to Globus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="institutialid.html">3a. Login with your institutional ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="globusid.html">3a. Login with your Globus ID</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profile.html">4. Complete or update your VC3 profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="allocations.html">5. Connect an Allocation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">6. Defining a Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clustertemplates.html">7. Creating a Cluster Template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">8. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="virtualclusters.html">8. Launching a Virtual Cluster</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="login.html" class="btn btn-neutral float-right" title="Login or Create Account" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../glossary.html" class="btn btn-neutral" title="Glossary of Terms Used in VC3 Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, VC3.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

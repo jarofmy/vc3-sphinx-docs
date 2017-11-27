@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Glossary of Terms Used in VC3 Documentation &mdash; VC3 Documentations  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="VC3 Documentations  documentation" href="index.html"/>
+        <link rel="next" title="VC3 User Guide" href="user/index.html"/>
+        <link rel="prev" title="VC3: Virtual Clusters for Community Computing" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> VC3 Documentations
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Glossary of Terms Used in VC3 Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#internal">Internal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#external">External</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user/index.html">VC3 User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/index.html#getting-started-with-vc3">Getting Started with VC3</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">VC3 Documentations</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Glossary of Terms Used in VC3 Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/glossary.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="glossary-of-terms-used-in-vc3-documentation">
+<span id="glossary"></span><h1>Glossary of Terms Used in VC3 Documentation<a class="headerlink" href="#glossary-of-terms-used-in-vc3-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="internal">
+<h2>Internal<a class="headerlink" href="#internal" title="Permalink to this headline">¶</a></h2>
+<dl class="glossary docutils">
+<dt id="term-cluster-states">cluster states</dt>
+<dd><p class="first">list of each possible state of a cluster throughout its lifecycle:</p>
+<p class="last">NEW             - Request was just created.
+VALIDATED       - Request has been validated for basic correctness.
+PENDING - Request is valid and is waiting to be instantiated.
+GROWING - Cluster is in the process of being instantiated but is not yet usable.
+RUNNING - Cluster is ready to use.
+SHRINKING       - Cluster resources are being removed.
+TERMINATING - Cluster is about to be destroyed.
+TERMINATED - Cluster no longer exists.</p>
+</dd>
+<dt id="term-credible">credible</dt>
+<dd>Credible is a 3rd-party utility for programmatically generating,
+storing, and retrieving security tokens.</dd>
+<dt id="term-dynamic-infrastructure">dynamic infrastructure</dt>
+<dd>Services that are instantiated upon a virtual cluster request, such as
+the factory.</dd>
+<dt id="term-factory">factory</dt>
+<dd>The scheduler and resource manager for middleware.</dd>
+<dt id="term-formatter">formatter</dt>
+<dd>A <span class="xref std std-term">plugin</span> that augments the output of <a href="#id1"><span class="problematic" id="id2">|Flake8|</span></a> when passed
+to <code class="xref std std-option docutils literal"><span class="pre">flake8</span> <span class="pre">--format</span></code>.</dd>
+<dt id="term-info-service">info service</dt>
+<dd><p class="first">Long-running daemon that interacts with the information database on
+behalf of other services.</p>
+<p class="last">The VC3 info service serves as both a persistence mechanism for the
+overall service, and a message bus between components. Information is
+stored and retrieved in the form of JSON-formatted documents, which
+thus form a single tree of information entities/nodes. The service
+optionally allows access security by enforcing ACLs at each node level.</p>
+</dd>
+<dt id="term-pin">PIN</dt>
+<dd>Personal Identification Number. One-time password for configuring a VC3
+resource via vc3-resource-tool</dd>
+<dt id="term-plugin-manager">plugin-manager</dt>
+<dd>The plugin manager is a 3rd-party small utility for quickly
+constructing plugin objects from configuration input.</dd>
+<dt id="term-request-id">request ID</dt>
+<dd>Unique identifier for a virtual cluster request.</dd>
+<dt id="term-static-infrastructure">static infrastructure</dt>
+<dd>A set of long-running services, such as the Info Service, Master, etc.</dd>
+<dt id="term-vc3-application">vc3-application</dt>
+<dd>One of the supported middleware applications to be deployed as an
+overlay defining a virtual cluster.</dd>
+<dt id="term-vc3-builder">vc3-builder</dt>
+<dd>Pilot-like executable that prepares an environment for middleware and
+user applications.
+The vc3-builder is a pilot-like utility, submitted to resource targets,
+which programmatically satisfies all requested dependencies before
+handing off control to the middleware layer. Its special feature is the
+ability to satisfy dependencies in different ways on different targets,
+depending on what it finds, e.g. it can tell if a dep is already
+satisfied, can download a pre-built library, or dynamically compile a
+dep if needed. Several builders can simultaneously satisfy dependencies
+in parallel on a resource (provided a shared filesystem).</dd>
+<dt id="term-vc3-client">vc3-client</dt>
+<dd>Package containing the VC3-aware library for creating, listing,
+updating, and deleting entities within the infoservice. It also
+contains a command line interface to the library.</dd>
+<dt id="term-vc3-core">vc3-core</dt>
+<dd>The VC3 component that coordinates activity within the dynamic
+infrastructure. One vc3-core exists per virtual cluster Request during
+its lifecycle.  A vc3-core will typically start a vc3-factory, along
+with any central components the cluster will need (e.g. an HTCondor
+collector/negotiator/schedd, a WorkQueue catalog, or a Squid server).</dd>
+<dt id="term-vc3-master">vc3-master</dt>
+<dd>Package containing the long-running daemon, running on the static
+infrastructure, that manages the lifecycle of all virtual cluster Requests.
+The vc3-master is a long-running daemon, running on the static
+infrastructure, that manages the lifecycle of all virtual cluster
+Requests. It polls the infoservice for new Requests, and spawns
+vc3-core instances on the dynamic infrastructure to service them.
+It also handles the generation and processing of all derived entities
+within the infoservice tree.</dd>
+<dt id="term-vc3-release">vc3-release</dt>
+<dd>This is a developer package that contains various setup and test
+utilities, and artifacts needed to create and use a YUM RPM repository.</dd>
+<dt id="term-vc3-resource-tool">vc3-resource-tool</dt>
+<dd>The vc3-resource-tool is a utility to be run by end users on resource
+targets in order to pair and enable them for usage by the VC3 system.</dd>
+</dl>
+</div>
+<div class="section" id="external">
+<h2>External<a class="headerlink" href="#external" title="Permalink to this headline">¶</a></h2>
+<dl class="glossary docutils">
+<dt id="term-allocation">Allocation</dt>
+<dd>An Allocation refers to an User and a Resource
+Each Allocation must be owned by an User.
+Allocations are divisible/fractionable, and can be given to Projects.
+Allocations may not be oversubscribed. But unbounded Allocations may be
+parents of multiple unbounded SubAllocations.
+Bounded Allocations cannot spawn unbounded SubAllocations.
+If a Resource grants hard allocation and allows backfill mode, those
+are two distinct Allocations (one hard and one unbounded)</dd>
+<dt id="term-authentication">Authentication</dt>
+<dd>The current mechanism for users to sign-up and create accounts into the
+VC3 project is by authenticating themselves with their GlobusID account.</dd>
+<dt id="term-mfa">MFA</dt>
+<dd>multi-factor authentication</dd>
+<dt id="term-project">Project</dt>
+<dd>a collection of “Allocations”. It has at least 1 “user owner”, and 0 or more non-owner members. The owner is also a member.</dd>
+<dt id="term-request">Request</dt>
+<dd>Entity that encapsulates all information that defines a particular virtual cluster. Creating a new Request triggers creation of the cluster.</dd>
+<dt id="term-request-templates">Request templates</dt>
+<dd>a list of pre-existing forms to be used as base for new cluster requests creation.</dd>
+<dt id="term-resource">Resource</dt>
+<dd>Any target on which a vc3-builder will run to provide computing power to a virtual cluster.</dd>
+<dt id="term-resource-profiles">Resource profiles</dt>
+<dd>a list of pre-existing forms to be used as base for new resource definition.</dd>
+<dt id="term-service-unit">Service unit</dt>
+<dd><p class="first">Service units are essentially just walltime hours, with minimum charges
+based on minimum cores or minimum nodes per job. Much like HEPSPEC, the
+SUs can be normalized/converted based on LINPACK benchmarks.
+Doc from XSEDE: <a class="reference external" href="https://portal.xsede.org/knowledge-base/-/kb/document/bazo">https://portal.xsede.org/knowledge-base/-/kb/document/bazo</a></p>
+<p>For storage, possibly with multiple allocations per user, examples
+are scratch disk vs long term storage.</p>
+<p class="last">Exotic devices like GPUs may or may not be accounted for, depending on
+the resource.</p>
+</dd>
+<dt id="term-sub-allocation">Sub-Allocation</dt>
+<dd>A SubAllocation can be defined in terms of fraction or units (cpuhours?, $dollars, HEPSPEC) or be unbounded.
+SubAllocations are children of an Allocation.</dd>
+<dt id="term-user">User</dt>
+<dd>Every User has 0 or more Allocations. Users are owners or members of
+one or more projects.
+A User in a project can make Request(s) utilizing project member’s Allocations</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="user/index.html" class="btn btn-neutral float-right" title="VC3 User Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="VC3: Virtual Clusters for Community Computing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, VC3.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

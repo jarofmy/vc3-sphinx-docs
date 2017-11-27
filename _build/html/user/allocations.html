@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5. Connect an Allocation &mdash; VC3 Documentations  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="VC3 Documentations  documentation" href="../index.html"/>
+        <link rel="up" title="Getting Started with VC3" href="index.html"/>
+        <link rel="next" title="6. Defining a Project" href="projects.html"/>
+        <link rel="prev" title="4. Complete or update your VC3 profile" href="profile.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> VC3 Documentations
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary of Terms Used in VC3 Documentation</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting Started with VC3</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="login.html">Login or Create Account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="globus.html">2. Sign in to Globus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="institutialid.html">3a. Login with your institutional ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="globusid.html">3a. Login with your Globus ID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="profile.html">4. Complete or update your VC3 profile</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5. Connect an Allocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html">6. Defining a Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clustertemplates.html">7. Creating a Cluster Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="resources.html">8. Connect an Allocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="virtualclusters.html">8. Launching a Virtual Cluster</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">VC3 Documentations</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Getting Started with VC3</a> &raquo;</li>
+        
+      <li>5. Connect an Allocation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user/allocations.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="connect-an-allocation">
+<span id="allocations"></span><h1>5. Connect an Allocation<a class="headerlink" href="#connect-an-allocation" title="Permalink to this headline">¶</a></h1>
+<p>After updating your profile, you can connect an allocation to the VC3 service.
+An allocation, in VC3, is defined as combination of a username and resource
+target that consumes some type of compute unit - regardless of whether it is
+billed as Service Units (many HPC centers), dollars (AWS, GCE), or priority
+(HTCondor and other opportunistic systems).</p>
+<p>Clicking <em>My Allocations</em> on the left shows all allocations currently
+associated with your account. You may select a new one by clicking
+<em>Connect Allocation</em>.</p>
+<img alt="../_images/screenshot_277.png" src="../_images/screenshot_277.png" />
+<p>You will be able to select a resource target from the drop down menu, and enter
+an account name for the resource. This is the same account name that you use to
+SSH to the remote system.
+.. image:: /image/screenshot_278.png</p>
+<p>Once you’ve connected your allocation, the system will validate it.
+.. image:: /image/screenshot_279.png</p>
+<p>In order to create a virtual cluster, the VC3 software needs to be able to SSH
+to the remote resource. If you click your allocation, you should see a section
+titled <em>Public Token</em>.</p>
+<img alt="../_images/screenshot_281.png" src="../_images/screenshot_281.png" />
+<p>You will need to add this token to your Unix account, in the file
+<cite>~/.ssh/authorized_keys</cite>. You can either edit this file with your favorite
+editor (such as <cite>nano</cite>, <cite>vim,</cite> or <cite>emacs</cite>), or use the <cite>echo</cite> command to append
+it to the authorized keys file.</p>
+<img alt="../_images/screenshot_282.png" src="../_images/screenshot_282.png" />
+<p>This token allows the VC3 system to SSH into a cluster _as <a href="#id1"><span class="problematic" id="id2">you_</span></a> and submit jobs
+on your, or your project’s, behalf.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="projects.html" class="btn btn-neutral float-right" title="6. Defining a Project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="profile.html" class="btn btn-neutral" title="4. Complete or update your VC3 profile" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, VC3.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
