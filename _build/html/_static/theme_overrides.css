@@ -1,0 +1,32 @@
+body {
+  color: #ffc500;
+  background-color: #252830;
+}
+p {
+  color: white;
+}
+.note p {
+  color: black;
+}
+a {
+  color: rgb(179, 179, 179);
+}
+a:visited {
+  color: rgb(179, 179, 179);
+}
+a:hover {
+  color: #ffc500;
+  transition: 0.5s;
+}
+.wy-side-nav-search {
+  background-color: #ffc500;
+}
+.wy-nav-content {
+    background: #252830;
+}
+.wy-nav-content-wrap {
+  background: #252830;
+}
+.wy-side-nav-search .icon {
+  color: white;
+}
